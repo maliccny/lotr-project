@@ -1,67 +1,116 @@
 # Project Overview
 
-## anime-suggester-app
+## lotr-project
 
-https://maliccny.github.io/anime-suggester-app/
+insert live host link here
 
 ## Project Description
 
-An App offering suggestions for Anime to watch, gives different choices of Anime and a brief description of the anime as well as key details that may he helpful to the user to make a choice. 
+This App showcases the different characters of the Lord Of The Rings and showcases detailed backgrounds of each charater. 
 
 ## API and Data Sample
 
-[Kitsu Anime API](https://kitsu.docs.apiary.io/reference/anime)
+[Lord Of The Rings API](https://the-one-api.herokuapp.com/documentation)
 
 ### API Data Sample
 
 ```JSON
 {
-  "data": {
-    "id": "1",
-    "type": "anime",
-    "links": {
-      "self": "https://kitsu.io/api/edge/anime/1"
-    },
-    "attributes": {
-      "createdAt": "2013-02-20T16:00:13.609Z",
-      "updatedAt": "2017-12-20T00:00:09.270Z",
-      "slug": "cowboy-bebop",
-      "synopsis": "In the year 2071, humanity has colonoized several of the planets and moons...",
-      "coverImageTopOffset": 400,
-      "titles": {
-        "en": "Cowboy Bebop",
-        "en_jp": "Cowbop Bebop",
-        "ja_jp": "カウボーイビバップ"
-      },
-      "canonicalTitle": "Cowboy Bebop",
-      "abbreviatedTitles": [
-        "COWBOY BEBOP"
-      ]
-        }
+"docs": [
+{
+"_id": "5cf5805fb53e011a64671582",
+"name": "The Fellowship Of The Ring"
+},
+{
+"_id": "5cf58077b53e011a64671583",
+"name": "The Two Towers"
+},
+{
+"_id": "5cf58080b53e011a64671584",
+"name": "The Return Of The King"
+}
+],
+"pages": {
+"current": 1,
+"prev": 0,
+"hasPrev": false,
+"next": 2,
+"hasNext": false,
+"total": null
+},
+"items": {
+"begin": null,
+"end": null,
+"total": 3
+}
+}
 
 ```
 
 ## Wireframes
 
-https://wireframe.cc/uh7vhb 
+insert wireframe links
 
 
 #### MVP 
 
-- Display title and synopsis of anime
-- fetching an image of the anime
-- Display the review score of the anime
-- a button that randomly selects an anime choice. 
-- an event listener which changes what is displayed on the page 
+- compont for the home page view with characters 
+- component for header
+- component for footer
+- component for detailed information of each character
+- an about the creator component
+- additional information component 
+- implement api call 
+- Make the app reactive, with 3 different screen views 
 
+
+#### MVP Libraries & Dependencies
+
+|   Library    | Description                                |
+| :----------: | :----------------------------------------- |
+|    React     | A JavaScript library for building user interfaces |
+| React Router | a collection of navigational components |
+| Axios | A library to make get requests from an API |
+
+
+#### MVP Components
+
+
+
+```
+src
+|__ assets/
+      |__ fonts
+      |__ wireframes
+|__ components/
+      |__ Header.jsx
+      |__ Character.jsx
+      |__ CharactersList.jsx
+      |__ aboutCreator.jsx
+      |__ additionalInfo.jsx
+      |__ Footer.jsx
+```
+
+#### MVP Breakdown
+
+> Use this section to go into further depth regarding every component, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
+
+|  Component     |    Type    | state | props | hooks | Description                                  |
+| :----------:   | :--------: | :---: | :---: | :---: | :-----------------------------------------   |
+|    App.js      |   class    |   y   |   n   |   n   | main component where API call will be        |
+|    Header      | functional |   n   |   n   |   n   | Header which will be displayed on all pages. |
+| CharacterList  | functional |   n   |   n   |   n   | listing of all the characters to choose from |
+|   Character    | functional |   n   |   n   |   n   | detailed information about the character     |
+| aboutCreator   | functional |   n   |   n   |   n   | an about me page with contact information    |
+| additionalInfo | functional |   n   |   n   |   n   | additional information with external links   |
+|    Footer      | functional |   n   |   n   |   n   | Footer which will be displayed on all pages. |
 
 
 
 #### PostMVP 
 
-- add a second API that fetches the opening theme song of the anime
-- a third API that fetches animations of the anime
-- input box for manually searching for a specific anime
+- implement a second API for theme song 
+- add gifs of characters with another API
 
 
 
@@ -69,94 +118,63 @@ https://wireframe.cc/uh7vhb
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|June 8| Project Prompt; approval | complete
-|June 9| HTML skeleton, pseudocode for API | complete
-|June 10| implement API code | complete
-|June 11| CSS, Initial Clickable Model | complete
-|June 12| PostMVP | complete
-|June 15| Present | Incomplete
-
-
-## Priority Matrix
-
-![Priority Matrix](https://i.imgur.com/ohFEEw0.jpg)
+|June 29| approval, pseudocode and smaller components | Icomplete
+|June 30| main compoments | Incomplete
+|July 1 | main components, API | Incomplete
+|July 2 | CSS, Initial Clickable Model | Incomplete
+|June 3 | PostMVP | Incomplete
+|June 6 | Present | Incomplete
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| HTML Structure | M | 1hr|  1hr | 1hr |
+| App.js compoment | H | 1hr|  1hr | 1hr |
 | Basic CSS Styles | M | 3hrs| 4hrs | 4hrs |
-| buttons | M | 2hrs | 1hr | 1hr |
-| API to Display title and synopsis for other information | H | 4hrs | 3hrs | 3hrs |
-| API to display opening theme song | H | 4hrs | 5hrs | 5hrs |
-| Additional Styling Effects | L | 2hrs | 2hrs | 2hrs |
+| linking between pages | M | 2hrs | 1hr | 1hr |
+| CharacterList Component | H | 4hrs | 3hrs | 3hrs |
+| Character info component | H | 4hrs | 5hrs | 5hrs |
+| about me component | M | 2hrs | 2hrs | 2hrs |
+| header component | M | 2hrs | 2hrs | 2hrs |
+| footer component | M | 2hrs | 2hrs | 2hrs |
 | Total | H | 20hrs| 20hrs | 20hrs |
 
 
-## Code Snippet
+## SWOT Analysis
+
+# Strength 
+
+- axios call 
+- writing methods/algorithms  for different elements
+- axios call 
+
+# Weakness
+
+- passing some props might be tricky
+- CSS styling
+
+# Opportunities
+
+- implementing different libraries 
+- adding another API to increase functionality
+
+# Threat
+
+- API may go down or break
+
+
+
+
+
+## Code Snippet Showcase
 
 **JS**
 
 ```
-async function getAnime() {
+fill in later
 
-  removeInfo()
-  const sectionInfo = document.querySelector('#section-info');
-  let videoTag = document.querySelector('iframe')
-  let id = Math.ceil(Math.random() * Math.floor(100));
-  let animeObj = await axios.get(`https://kitsu.io/api/edge/anime/${id}`);
-  let titleOpen = `${animeObj.data.data.attributes.canonicalTitle} Opening`
-  console.log(titleOpen)
-  let vidObj = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${titleOpen}&key=AIzaSyCdNw0Cahn4NwywdgWzL802Nwnk3UTUWxY`);
-  let videoCode = vidObj.data.items[0].id.videoId;
-  console.log(videoCode);
-
-  //printing of info in console, testing purposes
-
-  console.log(`ID: ${animeObj.data.data.id}`);
-  console.log(`Title: ${animeObj.data.data.attributes.canonicalTitle}`);
-  console.log(`Start-Date: ${animeObj.data.data.attributes.startDate}`);
-  console.log(`Episode Count: ${animeObj.data.data.attributes.episodeCount}`);
-  console.log(`Type Of Show: ${animeObj.data.data.attributes.showType}`);
-  console.log(`Episode Length: ${animeObj.data.data.attributes.episodeLength}`);
-  console.log(`Rating: ${animeObj.data.data.attributes.ageRatingGuide}`);
-  console.log(`Status: ${animeObj.data.data.attributes.status}`);
-  console.log(`Summary: ${animeObj.data.data.attributes.synopsis}`);
-
-  //inserting image of anime to DOM
-
-  sectionInfo.innerHTML += 
-    `<div>
-      <img src=${animeObj.data.data.attributes.posterImage.original}>
-    </div>`;
-
-  // inferting of anime info
-  sectionInfo.innerHTML +=
-    `<div>
-      <ul>
-        <li>Title: ${animeObj.data.data.attributes.canonicalTitle}</li>
-        <li>Start-Date: ${animeObj.data.data.attributes.startDate}</li>
-        <li>Episode Count: ${animeObj.data.data.attributes.episodeCount}</li>
-        <li>Type Of Show: ${animeObj.data.data.attributes.showType}</li>
-        <li>Episode Length: ${animeObj.data.data.attributes.episodeLength}</li>
-        <li>Rating: ${animeObj.data.data.attributes.ageRatingGuide}</li>
-        <li>Status: ${animeObj.data.data.attributes.status}</li>
-      </ul>
-      <p>Summary: ${animeObj.data.data.attributes.synopsis}</p>
-    </div>`;
-  
-
-  // youtube functionality
-  
-  console.log(videoTag)
-  console.log(videoTag.src)
-  videoTag.src = `https://www.youtube.com/embed/${videoCode}?autoplay=1`
-  console.log(videoTag.src)
-  
-} 
 ```
 
-## Change Log
+## Code Issues and Change Log
 
-scrapped idea for 3rd api
+fill in later 

@@ -47,9 +47,33 @@ This App showcases the different characters of the Lord Of The Rings and showcas
 
 ```
 
-## Wireframes
+### Wireframes
 
-insert wireframe links
+
+
+![Desktop Landing](https://wireframe.cc/kCjK3y)
+
+- Desktop Landing
+
+![Desktop character page](https://wireframe.cc/j8dluC)
+
+- Desktop character page
+
+![Mobile Landing](https://wireframe.cc/68BV8I)
+
+- Mobile Landing
+
+![Mobile character page](https://wireframe.cc/IyJeqT)
+
+- Mobile character page
+
+![Tablet Landing](https://wireframe.cc/jXHQng)
+
+- Tablet Landing
+
+![Tablet character view](https://wireframe.cc/wSN8nO)
+
+- Mobile character page
 
 
 #### MVP 
@@ -93,8 +117,6 @@ src
 
 #### MVP Breakdown
 
-> Use this section to go into further depth regarding every component, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
-
 |  Component     |    Type    | state | props | hooks | Description                                  |
 | :----------:   | :--------: | :---: | :---: | :---: | :-----------------------------------------   |
 |    App.js      |   class    |   y   |   n   |   n   | main component where API call will be        |
@@ -129,38 +151,40 @@ src
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| App.js compoment | H | 1hr|  1hr | 1hr |
-| Basic CSS Styles | M | 3hrs| 4hrs | 4hrs |
-| linking between pages | M | 2hrs | 1hr | 1hr |
-| CharacterList Component | H | 4hrs | 3hrs | 3hrs |
-| Character info component | H | 4hrs | 5hrs | 5hrs |
-| about me component | M | 2hrs | 2hrs | 2hrs |
-| header component | M | 2hrs | 2hrs | 2hrs |
-| footer component | M | 2hrs | 2hrs | 2hrs |
-| Total | H | 20hrs| 20hrs | 20hrs |
+| App.js compoment | H | 4hr|  hr | hr |
+| Basic CSS Styles | M | 3hrs| hrs | hrs |
+| linking between pages | M | 2hrs | hr | hr |
+| CharacterList Component | H | 4hrs | hrs | hrs |
+| Character info component | H | 4hrs | hrs | hrs |
+| about me component | M | 2hrs | hrs | hrs |
+| header component | M | 2hrs | hrs | hrs |
+| footer component | M | 2hrs | hrs | hrs |
+| Total | H | 20hrs| hrs | hrs |
 
 
 ## SWOT Analysis
 
-# Strength 
+#### Strength 
 
-- axios call 
 - writing methods/algorithms  for different elements
-- axios call 
+- api call
+- implementing different routes
 
-# Weakness
+
+#### Weakness
 
 - passing some props might be tricky
 - CSS styling
 
-# Opportunities
+#### Opportunities
 
 - implementing different libraries 
 - adding another API to increase functionality
 
-# Threat
+#### Threat
 
 - API may go down or break
+- API is tricky as some endpoints require auth via a token passed in a header
 
 
 

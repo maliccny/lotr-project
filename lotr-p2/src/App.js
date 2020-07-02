@@ -1,26 +1,57 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { Route, Link } from 'react-router-dom'
 import './App.css';
+import HomePage from './HomePage' // done working
+import Spacex from './Spacex' // done working
+import PastLaunches from './PastLaunches' //working
+import Rockets from './Rockets' //working
+import AboutMe from './AboutMe' //done working
+import Footer from './Footer' //working
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  
+  render() {
+    return (
+      <>
+        <div className="header">
+          <Link to="/">
+            <h1>Home</h1>
+          </Link>
+          <Link to="/aboutspace">
+            <h1>About SpaceX</h1>
+          </Link>
+          <Link to="/pastlaunches">
+            <h1>Past Launches</h1>
+          </Link>
+          <Link to="/rockets">
+            <h1>Rockets</h1>
+          </Link>
+          <Link to="/aboutme">
+            <h1>About Me</h1>
+          </Link>
+        </div>
+        <Route path='/' exact>
+          <HomePage />
+        </Route>
+        <Route path='/aboutspace'>
+          <Spacex />
+        </Route>
+        <Route path='/pastlaunches'>
+          <PastLaunches />
+        </Route>
+        <Route path='/rockets'>
+          <Rockets />
+        </Route>
+        <Route path='/aboutme'>
+          <AboutMe />
+        </Route>
+        <Route path='/' >
+          <Footer />
+        </Route>
+      </>
+    )
+  }
 }
 
-export default App;
+export default App

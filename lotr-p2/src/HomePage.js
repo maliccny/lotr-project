@@ -7,19 +7,19 @@ class HomePage extends Component {
     super()
 
     this.state = {
-      nextData: "",
-      links: "",
-      reddit: "",
-      patch: ""
+      nextData: {},
+      links: {},
+      reddit: {},
+      patch: {}
     }
   }
 
   async componentDidMount() {
     const data = await axios('https://api.spacexdata.com/v4/launches/next')
-    console.log(data.data)
-    console.log(data.data.links)
-    console.log(data.data.links.reddit)
-    console.log(data.data.links.patch)
+    // console.log(data.data)
+    // console.log(data.data.links)
+    // console.log(data.data.links.reddit)
+    // console.log(data.data.links.patch)
     
 
     this.setState({
@@ -33,7 +33,6 @@ class HomePage extends Component {
   render() {
     return (
       <>
-        <h1>home working</h1>
         <div>
           <img src={this.state.patch.small} alt="pic of mission patch"></img>
           <p>Mission Name: {this.state.nextData.name}</p>

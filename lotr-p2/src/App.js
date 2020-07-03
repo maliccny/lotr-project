@@ -4,7 +4,7 @@ import './App.css';
 import HomePage from './HomePage' // done working
 import Spacex from './Spacex' // done working
 import PastLaunches from './PastLaunches' //working
-import Rockets from './Rockets' //working
+import Rockets from './Rockets' //done working
 import AboutMe from './AboutMe' //done working
 import Footer from './Footer' //working
 
@@ -16,19 +16,19 @@ class App extends Component {
       <>
         <div className="header">
           <Link to="/">
-            <h1>Home</h1>
+            <h3>Home</h3>
           </Link>
           <Link to="/aboutspace">
-            <h1>About SpaceX</h1>
+            <h3>About SpaceX</h3>
           </Link>
           <Link to="/pastlaunches">
-            <h1>Past Launches</h1>
+            <h3>Past Launches</h3>
           </Link>
           <Link to="/rockets">
-            <h1>Rockets</h1>
+            <h3>Rockets</h3>
           </Link>
           <Link to="/aboutme">
-            <h1>About Me</h1>
+            <h3>About Me</h3>
           </Link>
         </div>
         <Route path='/' exact>

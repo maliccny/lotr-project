@@ -16,20 +16,23 @@ class App extends Component {
       <>
         <div className="header">
           <Link to="/">
-            <h3>Home</h3>
+            {/* <h3>Home</h3> */}
+            <img className="spaceLogo" src="https://www.metri-tech.com/wp-content/uploads/2017/01/spacex-logo.jpg"></img>
           </Link>
-          <Link to="/aboutspace">
-            <h3>About SpaceX</h3>
-          </Link>
-          <Link to="/pastlaunches">
-            <h3>Past Launches</h3>
-          </Link>
-          <Link to="/rockets">
-            <h3>Rockets</h3>
-          </Link>
-          <Link to="/aboutme">
-            <h3>About Me</h3>
-          </Link>
+          <div className="header-links">
+            <Link to="/pastlaunches">
+              <h3>Past Launches</h3>
+            </Link>
+            <Link to="/rockets">
+              <h3>Rockets</h3>
+            </Link>
+            <Link to="/aboutspace">
+              <h3>About SpaceX</h3>
+            </Link>
+            <Link to="/aboutme">
+              <h3>About Me</h3>
+            </Link>
+          </div> 
         </div>
         <Route path='/' exact>
           <HomePage />

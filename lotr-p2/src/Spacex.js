@@ -26,7 +26,7 @@ class Spacex extends Component {
   render() {
     return (
       <>
-        <div>
+        <div className="about-space-info">
           <p>Ceo: {this.state.spaceData.ceo}</p>
           <p>CTO of Propulsion: {this.state.spaceData.cto_propulsion}</p>
           <p>About: {this.state.spaceData.summary}</p>

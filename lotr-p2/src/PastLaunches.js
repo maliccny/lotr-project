@@ -24,11 +24,9 @@ class PastLaunches extends Component {
   render() {
     
     return (
-      <>
-        <h2>PastLaunches</h2>
-        
+      <div className="past-launch-info">
         {this.state.pastLaunches.map(launch => 
-          <div key={launch.name}>
+          <div className="past-launches" key={launch.name}>
             <img className="pastMissImg" src={launch.links.patch.small} alt="patch pic"></img>
             <h3>{launch.name}</h3>
             <span ><strong>Flight Number: </strong>{launch.flight_number}</span>
@@ -39,7 +37,7 @@ class PastLaunches extends Component {
             <a href={launch.links.reddit.launch} title="Reddit" target="_blank" rel="noopener noreferrer"><button>Discuss Launch</button></a>
           </div>
           )}
-      </>
+      </div>
     )
   }
 }

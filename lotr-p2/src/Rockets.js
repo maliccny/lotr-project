@@ -30,11 +30,10 @@ class Rockets extends Component {
 
   render() {
     return (
-      <>
-        <h2>SpaceX Rockets</h2>
+      <div className="outer-rockets-div">
         {this.state.rockets.map(rocket =>
-          <div key={rocket.name}>
-            <img src={rocket.flickr_images[0]} alt="pic of rocket"></img>
+          <div className="rockets-inner" key={rocket.name}>
+            <img className="rocket-img" src={rocket.flickr_images[0]} alt="pic of rocket"></img>
             <h3>{rocket.name}</h3>
             <p>{rocket.description}</p>
             <h3>Overall Specs</h3>
@@ -62,7 +61,7 @@ class Rockets extends Component {
           </div>
         )}
 
-      </>
+      </div>
     )
   }
 }

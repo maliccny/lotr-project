@@ -7,7 +7,7 @@ function AboutMe() {
       <div className="aboutMe-info">
         <img className="aboutMe-img" src="https://i.imgur.com/Y8PIcM4.gif" alt="Misbah's Pic"></img>
         <h2>About Me: </h2>
-        <p>Hi I am an aspiring web developer, who recently started learning HTML, CSS, and Javascript and React. I graduated City College of
+        <p className="aboutme-desc">Hi I am an aspiring web developer, who recently started learning HTML, CSS, and Javascript and React. I graduated City College of
         New York with a degree in Applied Mathematics, and have worked as a Data Analyst, creating Tableau dashboards. I have
         experience with using MySQL and PostgreSQL. I have some familiarity with using Python, from my days as an undergrad, and
         am currently learning Ruby on my own. I like watching Netflix shows and my hobbies include playing Basketball, and

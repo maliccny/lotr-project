@@ -28,13 +28,19 @@ class PastLaunches extends Component {
         {this.state.pastLaunches.map(launch => 
           <div className="past-launches" key={launch.name}>
             <img className="pastMissImg" src={launch.links.patch.small} alt="patch pic"></img>
-            <h3>{launch.name}</h3>
-            <span ><strong>Flight Number: </strong>{launch.flight_number}</span>
-            <p><strong>Date: </strong>{launch.date_local}</p>
-            <p>{launch.details}</p>
-            <p>Launch Succesful: {launch.success.toString()}</p>
-            <a href={launch.links.webcast} title="Youtube" target="_blank" rel="noopener noreferrer"><button>Watch Launch</button></a>
-            <a href={launch.links.reddit.launch} title="Reddit" target="_blank" rel="noopener noreferrer"><button>Discuss Launch</button></a>
+            <div className="past-section-info">
+              <h3>{launch.name}</h3>
+              <span ><strong>Flight Number: </strong>{launch.flight_number}</span>
+              <p><strong>Date: </strong>{launch.date_local}</p>
+              <p>{launch.details}</p>
+              <p>Launch Succesful: {launch.success.toString()}</p>
+            </div>
+            
+            <div className="pastlaunch-buttons">
+              <a href={launch.links.webcast} title="Youtube" target="_blank" rel="noopener noreferrer"><button>Watch Launch</button></a>
+              <a href={launch.links.reddit.launch} title="Reddit" target="_blank" rel="noopener noreferrer"><button>Discuss Launch</button></a>
+            </div>
+            
           </div>
           )}
       </div>

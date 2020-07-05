@@ -17,7 +17,7 @@ class App extends Component {
         <div className="header">
           <Link to="/">
             {/* <h3>Home</h3> */}
-            <img className="spaceLogo" src="https://www.metri-tech.com/wp-content/uploads/2017/01/spacex-logo.jpg"></img>
+            <img className="spaceLogo" src="https://www.metri-tech.com/wp-content/uploads/2017/01/spacex-logo.jpg" alt="spaceX logo"></img>
           </Link>
           <div className="header-links">
             <Link to="/pastlaunches">

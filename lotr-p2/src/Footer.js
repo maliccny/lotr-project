@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <div className="footer">
-      <p>Created Using</p>
+      <p className="created-using">Created Using</p>
       <div>
         <ul className="tech-list">
           <li>

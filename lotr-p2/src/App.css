@@ -51,7 +51,6 @@ img {
 
  .header-links {
    display: flex;
-   /* flex-flow: row wrap; */
    justify-content: space-around;
  }
 
@@ -111,6 +110,7 @@ img {
    width: 500px;
    margin-right: 2%;
    margin-top: 4%;
+   text-align: center;
  }
 
  .contact-link-nav {
@@ -193,3 +193,56 @@ img {
  .aboutme-desc {
    margin: 0 5%;
  }
+
+@media (max-width: 768px) {
+  .next-launch-info {
+    width: 500px;
+    margin-top: 4%;
+    margin: 0 4%;
+  }
+
+  .pastMissImg {
+    width: 157px;
+    margin: 10% 15%;
+  }
+} 
+
+@media (max-width: 375px) {
+  .header-links {
+    flex-flow: row wrap;
+  }
+
+  .homepage-info {
+    flex-flow: row wrap;
+    text-align: center;
+  }
+
+  .homepage-img {
+    width: 48%;
+    height: 25%;
+    margin: 9% 26%;
+  }
+
+  .contact-link-nav {
+    margin-left: -20%;
+  }
+
+  .past-launch-info {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .pastMissImg {
+    width: 157px;
+    margin: 10% 28%;
+  }
+
+  .outer-rockets-div {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .contact-link-nav {
+    margin-left: -12%;
+  }
+}

@@ -14,7 +14,6 @@ class PastLaunches extends Component {
     const data = await axios('https://api.spacexdata.com/v4/launches/past') 
     const length = data.data.length
     const arrSlice = data.data.slice(length - 7, length -1).reverse()
-    // console.log(arrSlice[0])
 
     this.setState({
       pastLaunches: arrSlice

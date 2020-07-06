@@ -16,10 +16,6 @@ class HomePage extends Component {
 
   async componentDidMount() {
     const data = await axios('https://api.spacexdata.com/v4/launches/next')
-    // console.log(data.data)
-    // console.log(data.data.links)
-    // console.log(data.data.links.reddit)
-    // console.log(data.data.links.patch)
     
 
     this.setState({

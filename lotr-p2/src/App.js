@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom'
 import './App.css';
-import HomePage from './HomePage' // done working
-import Spacex from './Spacex' // done working
-import PastLaunches from './PastLaunches' //working
-import Rockets from './Rockets' //done working
-import AboutMe from './AboutMe' //done working
-import Footer from './Footer' //working
+import HomePage from './HomePage' 
+import Spacex from './Spacex' 
+import PastLaunches from './PastLaunches' 
+import Rockets from './Rockets' 
+import AboutMe from './AboutMe' 
+import Footer from './Footer' 
 
 
 class App extends Component {
@@ -16,7 +16,6 @@ class App extends Component {
       <>
         <div className="header">
           <Link to="/">
-            {/* <h3>Home</h3> */}
             <img className="spaceLogo" src="https://www.metri-tech.com/wp-content/uploads/2017/01/spacex-logo.jpg" alt="spaceX logo"></img>
           </Link>
           <div className="header-links">

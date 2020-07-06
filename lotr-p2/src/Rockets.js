@@ -12,16 +12,6 @@ class Rockets extends Component {
 
   async componentDidMount() {
     const data = await axios('https://api.spacexdata.com/v4/rockets')
-    // console.log(data)
-    // console.log(data.data)
-    // console.log(data.data[0])
-    // console.log(data.data[0].name)
-    // console.log(data.data[0].flickr_images)
-    // console.log(data.data[0].flickr_images[0])
-    // data.data.map(rocket => 
-    //   console.log(rocket.name)
-    // )
-    // console.log(data.data[0].name)
 
     this.setState({
       rockets: data.data

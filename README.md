@@ -2,7 +2,7 @@
 
 ## SpaceX-project
 
-insert live host link here
+https://reverent-brown-efd4e6.netlify.app/
 
 ## Project Description
 

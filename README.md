@@ -191,12 +191,12 @@ src
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|June 29| approval, pseudocode and smaller components | Icomplete
-|June 30| main compoments | Incomplete
-|July 1 | main components, API | Incomplete
-|July 2 | CSS, Initial Clickable Model | Incomplete
-|June 3 | PostMVP | Incomplete
-|June 6 | Present | Incomplete
+|June 29| approval, pseudocode and smaller components | Complete
+|June 30| main compoments | Complete
+|July 1 | main components, API | Complete
+|July 2 | CSS, Initial Clickable Model | Complete
+|June 3 | PostMVP | Complete
+|June 6 | Present | Complete
 
 ## Timeframes
 

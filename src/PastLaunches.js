@@ -36,8 +36,8 @@ class PastLaunches extends Component {
             </div>
             
             <div className="pastlaunch-buttons">
-              <a href={launch.links.webcast} title="Youtube" target="_blank" rel="noopener noreferrer"><button>Watch Launch</button></a>
-              <a href={launch.links.reddit.launch} title="Reddit" target="_blank" rel="noopener noreferrer"><button>Discuss Launch</button></a>
+              <a href={launch.links.webcast} title="Youtube" target="_blank" rel="noopener noreferrer"><button className="Button Button1">Watch Launch</button></a>
+              <a href={launch.links.reddit.launch} title="Reddit" target="_blank" rel="noopener noreferrer"><button className="Button Button1">Discuss Launch</button></a>
             </div>
             
           </div>

@@ -50,7 +50,7 @@ class Rockets extends Component {
               </ul>
             </div>
             <div className="rockets-readmore">
-              <a href={rocket.wikipedia} title="Wikipedia" target="_blank" rel="noopener noreferrer"><button>Read More</button></a>
+              <a href={rocket.wikipedia} title="Wikipedia" target="_blank" rel="noopener noreferrer"><button className="Button Button1">Read More</button></a>
             </div>
           </div>
         )}

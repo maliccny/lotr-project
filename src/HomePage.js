@@ -44,7 +44,7 @@ class HomePage extends Component {
             </div>
           </div>
           <div className="homepage-video">
-            <iframe width="620" height="315"
+            <iframe className="iframe-launch-video-homepage" width="620" height="315"
               src={`https://www.youtube.com/embed/${this.state.links.youtube_id}`} title="Launch Live Feed">
             </iframe>
           </div>
